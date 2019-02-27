@@ -19,11 +19,11 @@ tcc .\main.c -o spritz.exe
 
 You can run spritz.exe by simply double-clicking it. 
 
-## Spritz text
+## Spritz Text
 
-Copy the text you want to spritz and paste it into the Window by right-clicking into it. The app will start spritzing immediately.
+Copy the text you want to spritz and paste it into the window by right-clicking into it. The app will start spritzing immediately.
 
-## Change speed
+## Change Speed
 You can change the display-speend by pressing the letters 1 (slow) to 9 (fast). Please note that you can only change the speed before you paste a text, after that you will have to wait until the software has finished spritzing before you can change the speed again.
 
 # Licence (MIT)

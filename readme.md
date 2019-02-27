@@ -10,6 +10,8 @@ spritz.exe is a tiny (5kb) implementation of [Spritz](https://www.spritz.com/) f
 
 Building is tested with `tcc version 0.9.27 (x86_64 Windows)`, however it should compile with other compilers to. Unfortunally there is only windows support right now, because of the use of system functions for copy-pasting and command line formatting.
 
+Make shure you've set source file encoding to CP437 before building.
+
 Build command:
 ```
 tcc .\main.c -o spritz.exe

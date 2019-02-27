@@ -2,7 +2,7 @@
 
 spritz.exe is a tiny (5kb) implementation of [Spritz](https://www.spritz.com/) for the Windows commandline.
 
-
+[Download](https://github.com/Peplow/spritz.exe/releases/download/v0.1/spritz.exe)
 
 ![](https://i.imgur.com/Nzq7vX6.gif)
 

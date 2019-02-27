@@ -6,6 +6,10 @@
 
 #define MAX_WORD_LENGTH 11
 
+/*
+* Make shure you set file-encoding to CP 437 before building.
+*/
+
 void spritz(char *word){
     static int factor = 3;
     int ovp = 0;
@@ -42,7 +46,7 @@ void spritz(char *word){
 
     sprintf(buffer,"\033[2J\033[1;1H"); 
     sprintf(buffer+strlen(buffer),ESC_BLACK);
-    sprintf(buffer+strlen(buffer),"ÄÄÄÄÄÄÄÄÄÄÄÄÂÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ\n");
+    sprintf(buffer+strlen(buffer),"é—¡é—¡é—¡é—¡é—¡é—¡è–©é—¡é—¡é—¡é—¡é—¡é—¡é—¡é—¡é—¡é—¡é—¡é—¡å­€n");
 
     for(int i = 0; i <= MAX_WORD_LENGTH - ovp; i++){
         sprintf(buffer+strlen(buffer)," ");
@@ -64,7 +68,7 @@ void spritz(char *word){
         sprintf(buffer+strlen(buffer)," ");
     }
 
-    sprintf(buffer+strlen(buffer),"\nÄÄÄÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ\n");
+    sprintf(buffer+strlen(buffer),"\né—¡é—¡é—¡é—¡é—¡é—¡è¬é—¡é—¡é—¡é—¡é—¡é—¡é—¡é—¡é—¡é—¡é—¡é—¡å­€n");
 
     printf("%s",buffer);
     Sleep(sleep_time);
@@ -117,30 +121,6 @@ int main(int argc, char const *argv[])
             }
 
     }
-
-
-/*
-    while((ch = fgetc(stdin))){
-        if(ch == '\n' || ch == ' ' || ch=='\0' || ch==NULL){
-            input[i] = '\0';
-            spritz(input);
-            i = 0;
-            printf(ESC_WHITE);
-        }
-        else{
-            input[i] = ch;
-            i++;
-        }
-    }
-*/
-
-    /*
-    while(scanf("%s",input)){
-        spritz(input);
-        //cls();
-    };
-    */
-    
 
     return 0;
 }
